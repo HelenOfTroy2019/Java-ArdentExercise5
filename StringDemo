@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class string_demo {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String sName = input.next();
+		System.out.println(sName.length());
+		System.out.print(sName.charAt(1)+" "+sName.charAt(2)+" "+sName.charAt(sName.length()-1));
+		sName.toUpperCase(); 
+		
+	}
+
+}
