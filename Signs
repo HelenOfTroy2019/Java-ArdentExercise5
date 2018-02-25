@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class signs {
+
+	public static void main(String[] args) {
+		System.out.println("This program classifies a number by its sign.");
+		System.out.print("Enter a number:");
+		Scanner input = new Scanner(System.in);
+		int start = input.nextInt();
+		if (start>0){
+			System.out.println("The number is positive.");
+		}
+		else if (start<0) {
+			System.out.println("The number is negative.");
+		}
+	}
+
+}
