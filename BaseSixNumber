@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class homework_base_6_number {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		System.out.print("Please enter a number in base 6:");
+		String base6 = input.next();
+		
+		int base10 = 0;
+		for (int i=base6.length(); i>0; i--) {
+			int mult = 1;
+			for (int j=0; j<base6.length() - i; j++) {
+				mult = mult * 6;
+			}
+			base10 += Integer.parseInt(base6.substring(i-1,  i)) * mult;
+		}
+		System.out.println("The number in base 10 is: "+base10);
+		
+	}
+
+}
