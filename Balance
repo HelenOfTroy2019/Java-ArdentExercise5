@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class balance {
+
+	public static void main(String[] args) {
+		System.out.print("This program calculates interest. Starting balance?");
+		Scanner input = new Scanner(System.in);
+		double start = input.nextDouble();
+		System.out.print("Annual interest rate percentage?");
+		double rate = input.nextDouble();
+		start=start+(start*rate/100);
+		System.out.println("Balance after one year: "+start);
+		start=start+(start*rate/100);
+		System.out.println("Balance after two years: "+start);
+	}
+
+}
